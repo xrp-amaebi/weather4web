@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/png" rel="icon" href="./img/weather.png">
+    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <title>About</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <img src="./img/marques.png" class="portrait" />
+        <header>{{name}}</header>
+        <p>{{text}}</p>
+        <div>You may contact me here <a href='/'>{{email}}</a></div> <br>
+        <div>If you'd like to see the code for this project, its publicly hosted on a git repository here <a href='/'>{{github}}</a>
+        </div>
+    </div>   
+    {{>footer}}
+</body>
+</html>

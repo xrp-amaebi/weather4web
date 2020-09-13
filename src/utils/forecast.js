@@ -16,7 +16,9 @@ const forecast = ({ longitude, latitude }, callback) => {
                 humidity: body.current.humidity,
                 precipitation: body.current.precip,
                 observation_time: body.current.observation_time,
-                location_time: body.location.localtime   
+                location_time: body.location.localtime,
+                cloudcover: body.current.cloudcover,
+                visibility: body.current.visibility
             });
         };
     });
